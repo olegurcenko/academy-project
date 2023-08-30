@@ -1,0 +1,168 @@
+@media screen and (min-width: 1601px) {
+    .MainUserInfo {
+        margin-top: -100px;
+        margin-left: 25px;
+    }
+
+    .MoreInfo_button {
+        display: none;
+    }
+
+    .MainUserInfo-list {
+        width: calc(45% + 10px);
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+
+        li {
+
+            &:first-child {
+
+                img {
+                    border-radius: var(--border-r-b);
+                }
+
+            }
+        }
+    }
+
+    .MainUserInfo-item__Photo {
+        border-radius: var(--border-r-bigger) 0px 0px var(--border-r-bigger);
+        padding: 20px 0px 20px 20px;
+    }
+
+    .MainUserInfo-item__UserInfo {
+        border-radius: 0px var(--border-r-bigger) var(--border-r-bigger) 0px;
+    }
+
+    .MainUserInfo-item__Photo,
+    .MainUserInfo-item__UserInfo {
+        background-color: var(--gray-card-profile);
+        backdrop-filter: blur(20px);
+    }
+
+    .UserInfo {
+        padding: 20px;
+        color: var(--menu-items-color);
+    }
+
+    .UserInfo-Name {
+        font-size: 40px;
+        display: flex;
+    }
+
+    .UserInfo-UserName {
+        margin-bottom: 10px;
+    }
+
+    .UserInfo-UserName,
+    .UserInfo-Age,
+    .UserInfo-Academy {
+        font-size: 20px;
+    }
+
+    .UserInfo-Status {
+        font-size: 15px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .MainUserInfo {
+        // display: none;
+        margin-top: -120px;
+        margin-left: 25px;
+    }
+
+    .MainUserInfo-list {
+        width: calc(100% - 25px) !important;
+        background-color: var(--gray-card-profile);
+        backdrop-filter: blur(20px);
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        border-radius: var(--border-r-bigger);
+
+        li {
+            &:first-child {
+                img {
+                    border-radius: var(--border-r-b);
+                }
+            }
+        }
+
+        .MainUserInfo-item__Photo {
+            padding: 20px 20px 20px 20px;
+        }
+
+        .MainUserInfo-item__UserInfo {
+            width: calc(100% - 325px);
+
+            .UserInfo {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 100%;
+
+                li {
+                    margin-block: auto;
+                    // display: flex;
+                    // align-items: center;
+                }
+
+                .UserInfo-Name {
+                    display: flex;
+                    justify-content: space-between;
+
+                    p {
+                        font-size: 35px;
+                        font-weight: 600;
+                        color: var(--menu-items-color);
+                    }
+
+                    span {
+                        font-size: 20px;
+                        color: var(--menu-items-color);
+                    }
+                }
+
+                .UserInfo-UserName {
+                    font-size: 30px;
+                    position: relative;
+                    top: -20px;
+                    color: var(--menu-items-color);
+                }
+
+                .UserInfo-Academy {
+                    font-size: 20px;
+                    position: relative;
+                    top: -20px;
+                    color: var(--menu-items-color);
+                }
+
+                .UserInfo-Age {
+                    position: relative;
+                    top: -20px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: var(--menu-items-color);
+                    display: flex;
+                    justify-content: space-between;
+
+                    .Posts_button {
+                        background-color: var(--menu-items-color);
+                        font-size: 20px;
+                        color: var(--lang-active-color);
+                        padding: 5px;
+                        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+                        border-radius: var(--border-r-s);
+                        top: 2rem;
+                        left: calc(100% - 90px);
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

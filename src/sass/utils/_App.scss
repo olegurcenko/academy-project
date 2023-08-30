@@ -1,0 +1,82 @@
+* {
+    @include MnullPnull;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include MnullPnull;
+}
+
+input,
+textarea,
+button {
+    border: none;
+    outline: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--body-bg);
+    overflow: hidden;
+}
+
+#root {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.RootContainers {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin: var(--distance-boundaries) var(--distance-boundaries)
+        var(--distance-boundaries) var(--block-spacing);
+}
+
+.Header,
+.Main,
+.Footer {
+    padding: 15px;
+}
+
+.activeMenu,
+.activeLanguage {
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+.activeMenu {
+    color: var(--menu-items-active-color) !important;
+    background-color: var(--menu-items-active-bg) !important;
+}
+
+.activeLanguage {
+    background-color: var(--lang-active-bg);
+    color: var(--lang-active-color);
+}
+
+.inactiveLanguage {
+    cursor: pointer;
+    background-color: var(--lang-inactive-bg);
+}
