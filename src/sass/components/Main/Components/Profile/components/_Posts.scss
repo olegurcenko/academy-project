@@ -1,0 +1,93 @@
+.Posts {
+    margin-left: 20px;
+    background-color: var(--gray-card-profile);
+    border-radius: var(--border-r-s);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+
+    .Posts-list {
+
+        .Posts-list__item-block {
+            background-color: var(--white);
+            border-radius: var(--border-r-bigger);
+            margin-bottom: 1rem;
+
+            .Posts-list__item-block-list{
+                width: 90%;
+                margin-inline: auto;
+                box-sizing: border-box;
+                padding-block: 1rem;
+
+                .Posts-list__item-block-list_item-author {
+                    display: flex;
+                    align-items: center;
+                    margin-block: 1rem;
+
+                    .author-image {
+                        max-width: 50px;
+                        border-radius: var(--border-r-s);
+                        height: 50px;
+                    }
+                    .author-username {
+                        font-size: 25px;
+                        margin-left: .5rem;
+                        margin-top: -.3rem;
+
+                        &::before {
+                            content: '@';
+                        }
+                    }
+                }
+                .Posts-list__item-block-list_item-text {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 0.2rem;
+
+                    .text-title {
+                        font-weight: 600;
+                        font-size: 24px;
+                        margin-bottom: 0.2rem;
+                    }
+
+                    .text-body {
+                        font-size: 21px;
+                        text-align: justify;
+                    }
+                }
+                .Posts-list__item-block-list_item-photo {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 0.2rem;
+
+                    .post-image {
+                        max-width: 90%;
+                        max-height: 60vh;
+                        border-radius: var(--border-r-s);
+                    }
+
+                }
+                .Posts-list__item-block-list_item-actions {
+                    width: fit-content;
+                    padding: .2rem .4rem;
+                    display: flex;
+                    cursor: pointer;
+
+                    .like-img {
+                        width: 50px;
+                        height: 50px;
+
+                        &:hover {
+                            fill: var(--gray-hover-darker);
+                        }
+                    }
+
+                    .like-counter {
+                        margin-left: .6rem;
+                        font-size: 20px;
+                        margin-top: .8rem;
+                    }
+                }
+            }
+        }
+    }
+}

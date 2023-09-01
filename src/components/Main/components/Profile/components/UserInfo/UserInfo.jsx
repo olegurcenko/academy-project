@@ -1,4 +1,10 @@
-export const UserInfo = ({ Assets, Languages, Localization, useLanguage, ChangeBtnFunc }) => {
+export const UserInfo = ({
+    Assets,
+    Languages,
+    Localization,
+    useLanguage,
+    ChangeBtnFunc,
+}) => {
     const { Logo, Images } = Assets;
     return (
         <section className="MainUserInfo">
@@ -14,17 +20,18 @@ export const UserInfo = ({ Assets, Languages, Localization, useLanguage, ChangeB
                 <li className="MainUserInfo-item__UserInfo">
                     <ul className="UserInfo">
                         <li className="UserInfo-Name">
-                            <p>Sasha Priadchenko{" "}</p>
+                            <p>Sasha Priadchenko </p>
                             <span className="UserInfo-Status">
                                 Happy Coding!
                             </span>
                         </li>
                         <li className="UserInfo-UserName">@deavision</li>
-
                         <li className="UserInfo-Academy">
                             DSEA | Automation of production processes
                         </li>
-                        <li className="UserInfo-Age"><p>29.05.2001</p><button className="Posts_button" onClick={ChangeBtnFunc}>Posts</button></li>
+                        <li className="UserInfo-Age">
+                            <p>29.05.2001</p>
+                        </li>
                     </ul>
                 </li>
             </ul>

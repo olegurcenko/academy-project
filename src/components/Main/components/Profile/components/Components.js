@@ -1,8 +1,13 @@
-import { Cover } from "./Cover/Cover";
+import { UserCover } from "./UserCover/UserCover";
+import { UserFriends } from "./UserFriends/UserFriends";
 import { UserInfo } from "./UserInfo/UserInfo";
-import { PostFeed } from "./PostFeed/PostFeed";
-import { PostList } from "./PostFeed/PostsList/PostList";
-import { UserAbout } from "./PostFeed/UserAbout/UserAbout";
-import { UserFriends } from "./PostFeed/UserFriends/UserFriends";
+import { UserPosts } from "./UserPosts/UserPosts";
+import { WorkExperience } from "./WorkExperience/WorkExperience";
 
-export const ProfileComponents = { Cover, UserInfo, PostFeed, PostList, UserAbout, UserFriends};
+export const ProfileComponents = {
+    UserCover,
+    UserFriends,
+    UserInfo,
+    UserPosts,
+    WorkExperience,
+};
